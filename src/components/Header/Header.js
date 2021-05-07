@@ -4,7 +4,9 @@ import './Header.css'
 function Header() {
     return (
         <div className="App">
-            <span className='header'>
+            <span
+                onClick ={() => window.scroll(0,0)}
+                className='header'>
                 🎥 Entertainment Adda 🎬
             </span>
     </div>
