@@ -46,22 +46,22 @@ export default function SimpleBottomNavigation() {
       className={classes.root}
     >
       <BottomNavigationAction
-        style={{ color: "white" }} 
+        style={{ color: "wheat" }} 
         label="Trending" 
         icon={<WhatshotIcon />} 
         />
       <BottomNavigationAction 
-        style={{ color: "white" }}
+        style={{ color: "wheat" }}
         label="Movies" 
         icon={<MovieIcon />} 
         />
       <BottomNavigationAction 
-        style={{ color: "white" }}
+        style={{ color: "wheat" }}
         label="Tv-Series" 
         icon={<TvIcon/>} 
         />
       <BottomNavigationAction 
-        style={{ color: "white" }}
+        style={{ color: "wheat" }}
         label="Search" 
         icon={<SearchIcon />} 
         />
