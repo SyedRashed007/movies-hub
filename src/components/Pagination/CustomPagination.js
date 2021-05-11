@@ -22,7 +22,7 @@ const CustomPagination = ({setPage, numOfPages = 10}) => {
                 width: "100%",
                 display: "flex",
                 justifyContent: "center",
-                marginTop: "10"
+                marginTop: "8"
             }}>
             <ThemeProvider theme = {darkTheme}>
                 <Pagination
