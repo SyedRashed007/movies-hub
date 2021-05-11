@@ -20,10 +20,10 @@ function Trending() {
             setContent(data.results);
             
         }
-        // data is destructured here i.e in form of data variable
-
-            fetchTrending()
+        
+        fetchTrending()
     },[page])
+    // data is destructured here i.e in form of data variable
 
     return (
         <div>
