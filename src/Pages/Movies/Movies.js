@@ -22,7 +22,7 @@ function Movies() {
             setContent(data.results);
             setnumOfPages(data.total_pages)
         }
-            fetchMovies();
+                fetchMovies();
 
     }, [page, genreforURL])
 
