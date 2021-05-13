@@ -17,8 +17,8 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
   },
   paper: {
-      width: "90%",
-      height: "80%",
+    width: "80%",
+    height: "70%",
     backgroundColor: "#39445a",
     border: '2px solid #000',
     boxShadow: theme.shadows[5],
@@ -48,7 +48,7 @@ export default function ContentModal({children, media_type, id}) {
 
    const fetchVideo = async () => {
         const { data } = await axios.get(`https://api.themoviedb.org/3/${media_type}/${id}/videos?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`);
-        console.log(data)
+        // console.log(data)
         setVideo(data.results[0]?.key)
     }
 
@@ -101,7 +101,7 @@ export default function ContentModal({children, media_type, id}) {
                   alt={content.name || content.title}
                   className="ContentModal__landscape"
                 />
-                <div className="ContentModal_About">
+                <div className="ContentModal__about">
                     <span className="ContentModal__title">
                     {content.name || content.title} (
                     {(

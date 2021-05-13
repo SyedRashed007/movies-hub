@@ -27,7 +27,7 @@ function Search() {
     const fetchSearch = async () => {
         try{
             const { data } = await axios.get(`https://api.themoviedb.org/3/search/${type ? "tv" : "movie"}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&query=${searchText}&page=${page}&include_adult=false`)
-            console.log(data)
+            // console.log(data)
             setContent(data.results);
             setNumOfPages(data.total_pages);
         } catch (error) {
@@ -65,7 +65,7 @@ function Search() {
                 </div>
 
                 <Tabs 
-                    value={type} 
+                    value={type}
                     indicatorColor='primary' 
                     textColor='primary'
                     onChange={(event, newValue) => {
@@ -73,8 +73,8 @@ function Search() {
                         setPage(1)
                     }}
                 >
-                    <Tab style={{ width: '50%'}} label="Seach Movies"/>
-                    <Tab style={{ width: '50%'}} label="Seach Tv Series"/>
+                    <Tab style={{width: "100%"}} label="Seach Movies"/>
+                    <Tab style={{width: "100%"}} label="Seach Tv Series"/>
                 </Tabs>
             </ThemeProvider>
             <div className="trending">
