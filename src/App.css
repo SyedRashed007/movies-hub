@@ -3,7 +3,7 @@
 }
 .app {
   min-height: 100vh;
-  background-color: #39445a;
+  background-color: #1a0505fd;
   color: wheat;
   padding-top: 130px;
   padding-bottom: 70px;
@@ -13,7 +13,7 @@
   display: flex;
   justify-content: center;
   font-family: "Montserrat", sans-serif;
-  font-size: 2vw;
+  font-size: 3vw;
   padding: 4px;
   border-radius: 50px;
   color: wheat;

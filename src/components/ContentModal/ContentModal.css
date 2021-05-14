@@ -3,17 +3,20 @@
 .ContentModal__landscape {
   object-fit: contain;
   border-radius: 10px;
+  /* background-color: wheat; */
 }
 
 .ContentModal__portrait {
   display: none;
   object-fit: contain;
   border-radius: 10px;
+  /* background-color: wheat; */
 }
 
 .tagline {
   padding-bottom: 10px;
   align-self: center;
+  color: wheat;
 }
 
 .ContentModal {
@@ -39,11 +42,12 @@
   font-family: "Roboto", sans-serif;
   justify-content: space-evenly;
   font-weight: 300;
+  color: wheat;
 }
 
 .ContentModal__title {
   height: 12%;
-  font-size: 5vw;
+  font-size: 4.5vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,7 +87,7 @@
     height: 100%;
   }
   .ContentModal__title {
-    font-size: 2.5vw;
+    font-size: 1.5vw;
   }
   .ContentModal__description {
     font-size: 22px;
